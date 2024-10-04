@@ -1,0 +1,48 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+body{
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2FPersona5%2Fcomments%2F1cc9rzu%2Fim_recreating_the_phansite%2F&psig=AOvVaw0ELnkJgmq-Sb8kl02P7Sei&ust=1728117708917000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDSzqeq9IgDFQAAAAAdAAAAABAc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backface-visibility: visible;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: linear-gradient(to bottom, (0, 0, 0, 1), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    background-color: black;
+    padding: 5px 20px;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+.nav-item{
+    color: red;
+    font-family: monospace;
+}
+.nav-item-container{
+    display: flex;
+    column-gap: 20px;
+}
+button{
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 5%;
+    font-family: monospace;
+}
